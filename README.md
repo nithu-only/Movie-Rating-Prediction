@@ -1,103 +1,23 @@
 🎬 Movie Rating Prediction
-A machine learning project that predicts IMDb movie ratings based on structured metadata, including genre, duration, director success rate, actor popularity, and more. The goal is to leverage data science techniques to build an accurate rating prediction model.
+
+This project builds a predictive model to estimate movie ratings based on various features such as genre, duration, director success rate, actor popularity, and more. The goal is to use machine learning techniques to forecast IMDb ratings using structured movie metadata.
 
 📌 Features
-Data Preprocessing: Handling missing values, outlier detection, and data normalization.
-
-Categorical Encoding: Converting categorical data (e.g., genres, directors) into machine-readable format.
-
-Feature Engineering: Creating features like Director Success Rate and Actor Popularity for better model performance.
-
-Model Building & Evaluation: Training a regression model and measuring its accuracy with metrics.
-
-Visualizations: Data insights using charts and graphs.
-
+Data preprocessing & missing value handling
+Encoding categorical variables
+Feature engineering (e.g., Director Success Rate, Actor Popularity)
+Model building and evaluation
+Visualizations for insights
 🗂️ Project Structure
-bash
-Copy
-Edit
-Movie-Rating-Prediction/
-├── data/
-│   └── IMDb_Movies_India.csv        # Dataset containing movie metadata
-├── models/
-│   └── movie_rating_model.pkl       # Saved trained model
-├── visuals/
-│   ├── feature_importance.png       # Visualization of important features
-│   ├── actual_vs_predicted.png      # Actual vs predicted ratings plot
-│   ├── top_directors.png            # Bar chart of top-rated directors
-│   ├── top_actors.png               # Bar chart of top-rated actors
-│   └── heatmap.png                  # Heatmap of feature correlations
-├── notebooks/
-│   └── movie_rating_prediction.ipynb  # Jupyter Notebook for model training & analysis
-├── requirements.txt                 # Dependencies for running the project
-└── README.md                        # Project documentation
-⚙️ Tools & Technologies Used
-Programming Language: Python
+Movie-Rating-Prediction/ ├── data/ │ └── IMDb Movies India.csv ├── models/ │ └── movie_rating_model.pkl ├── visuals/ │ ├── feature_importance.png │ ├── actual_vs_predicted.png │ ├── top_directors.png │ ├── top_actors.png │ └── heatmap.png ├── notebooks/ │ └── movie_rating_prediction.ipynb ├── requirements.txt └── README.md
 
-Libraries:
-
-Data Processing: Pandas, NumPy
-
-Machine Learning: Scikit-learn
-
-Visualization: Matplotlib, Seaborn
-
-Model Serialization: Joblib
-
-🚀 Installation & Usage
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Movie-Rating-Prediction.git
-cd Movie-Rating-Prediction
-2️⃣ Install Dependencies
-Ensure you have Python 3.x installed, then run:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3️⃣ Run the Jupyter Notebook
-Launch Jupyter Notebook and open the project:
-
-bash
-Copy
-Edit
-jupyter notebook
-Then navigate to notebooks/movie_rating_prediction.ipynb and execute the code cells.
-
-📈 Model Performance & Evaluation
-Regression Metrics:
-
-Mean Squared Error (MSE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score (Coefficient of Determination)
-
-Visualizations:
-
-Feature Importance: Understanding which factors influence movie ratings the most.
-
-Actual vs Predicted Ratings: Checking model accuracy with a scatter plot.
-
-Top Directors & Actors: Analyzing which directors and actors receive higher ratings.
-
-Heatmap: Correlation analysis of features in the dataset.
-
-🤝 Contributing
-Contributions are welcome! Follow these steps:
-
-Fork the repository.
-
-Create a new feature branch (git checkout -b feature-branch).
-
-Commit your changes (git commit -m "Added new feature").
-
-Push to the branch (git push origin feature-branch).
-
-Open a Pull Request.
-
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+⚙️ Tools Used
+Python, Pandas, NumPy, Scikit-learn
+Matplotlib, Seaborn, Joblib
+🚀 How to Run
+Clone the repo
+Install dependencies: pip install -r requirements.txt
+Run the Jupyter Notebook in notebooks/
+📈 Model Output
+Model evaluation metrics (MSE, RMSE, R² Score)
+Feature importance and performance visualizations
